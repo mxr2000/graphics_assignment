@@ -1,0 +1,141 @@
+﻿<Window x:Class="GraphicsAssignmentWPFVersion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GraphicsAssignmentWPFVersion"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/themes/Theme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <local:DrawingCanvas Background="Beige" x:Name="canvas" Grid.Column="0" Grid.RowSpan="2">
+           
+        </local:DrawingCanvas>
+        <TabControl Grid.Column="1" Grid.Row="0" Background="Azure">
+            <TabItem Header="Line">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock VerticalAlignment="Center" Grid.Row="0" >X1</TextBlock>
+                    <TextBlock VerticalAlignment="Center" Grid.Row="1">Y1</TextBlock>
+                    <TextBlock VerticalAlignment="Center" Grid.Row="2">X2</TextBlock>
+                    <TextBlock VerticalAlignment="Center" Grid.Row="3">Y2</TextBlock>
+                    <TextBox Name="tbLineX1" Margin="2" Grid.Column="1" Grid.Row="0">0</TextBox>
+                    <TextBox Name="tbLineY1" Margin="2" Grid.Column="1" Grid.Row="1">0</TextBox>
+                    <TextBox Name="tbLineX2" Margin="2" Grid.Column="1" Grid.Row="2">20</TextBox>
+                    <TextBox Name="tbLineY2" Margin="2" Grid.Column="1" Grid.Row="3">10</TextBox>
+                    <TextBlock Grid.Row="4" Margin="0 0 0 5">Algorithm:</TextBlock>
+                    <RadioButton Name="rbLineDefault" GroupName="lineAlgorithm" Grid.Row="5">Defualt</RadioButton>
+                    <RadioButton Name="rbLineDDA" GroupName="lineAlgorithm" Grid.Row="6" IsChecked="True">DDA</RadioButton>
+                    <RadioButton Name="rbLineBresenham" GroupName="lineAlgorithm" Grid.Row="7">Bresenham</RadioButton>
+                    <CheckBox Name="cbLineAnimation" Margin="0 5 0 0" Grid.Row="8">Animation</CheckBox>
+                    <Button Grid.Column="1" Grid.Row="9" Click="Button_Click">Draw line</Button>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Ellipse">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="78*"/>
+                        <ColumnDefinition Width="22*"/>
+                        <ColumnDefinition Width="24*"/>
+                        <ColumnDefinition Width="75*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock VerticalAlignment="Center" Grid.Row="0" Grid.ColumnSpan="3" Margin="0,0,23.8,0">Center X</TextBlock>
+                    <TextBlock VerticalAlignment="Center" Grid.Row="1" Grid.ColumnSpan="3" Margin="0,0,23.8,0">Center Y</TextBlock>
+                    <TextBlock VerticalAlignment="Center" Grid.Row="2" Grid.ColumnSpan="3" Margin="0,0,23.8,0">Radius X</TextBlock>
+                    <TextBlock VerticalAlignment="Center" Grid.Row="3" Grid.ColumnSpan="3" Margin="0,0,23.8,0">Radius Y</TextBlock>
+                    <TextBox Name="tbEllipseCenterX" Margin="2.2,2,2,2" Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="2">0</TextBox>
+                    <TextBox Name="tbEllipseCenterY" Margin="2.2,2,2,2" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2">0</TextBox>
+                    <TextBox Name="tbEllipseRadiusX" Margin="2.2,2,2,2" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2">8</TextBox>
+                    <TextBox Name="tbEllipseRadiusY" Margin="2.2,2,2,2" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2">6</TextBox>
+                    <TextBlock Grid.Row="4" Grid.ColumnSpan="3" Margin="0 0 0 5">Algorithm:</TextBlock>
+                    <RadioButton IsChecked="True" Name="rbEllipseDefault" GroupName="ellipseAlgorithm" Grid.Row="5" Grid.ColumnSpan="3" Margin="0,0,23.8,16.4" Grid.RowSpan="2">Default</RadioButton>
+                    <RadioButton Name="rbEllipseMidPoint" GroupName="ellipseAlgorithm" Grid.Row="6" Grid.ColumnSpan="3" Margin="0,0.6,23.8,21" Grid.RowSpan="2">中点椭圆</RadioButton>
+                    <CheckBox Name="cbEllipseAnimation" Margin="0,5.6,23.8,0" Grid.Row="7" Grid.ColumnSpan="3">Animation</CheckBox>
+                    <Button Name="btnDrawEllipse" Click="BtnDrawEllipse_Click"
+                            Grid.Column="2" Grid.Row="7" Margin="0.2,21.6,0,0.8" Grid.RowSpan="3" Grid.ColumnSpan="2">Draw ellipse</Button>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Circle">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock VerticalAlignment="Center" Grid.Row="0">Center X</TextBlock>
+                    <TextBlock VerticalAlignment="Center" Grid.Row="1">Center Y</TextBlock>
+                    <TextBlock VerticalAlignment="Center" Grid.Row="2">Radius</TextBlock>
+                    <TextBox Name="tbCircleCenterX" Margin="2" Grid.Column="1" Grid.Row="0">100</TextBox>
+                    <TextBox Name="tbCircleCenterY" Margin="2" Grid.Column="1" Grid.Row="1">0</TextBox>
+                    <TextBox Name="tbRadius" Margin="2" Grid.Column="1" Grid.Row="2">50</TextBox>
+                    <TextBlock Grid.Row="4" Margin="0 0 0 5">Algorithm:</TextBlock>
+                    <RadioButton Name="rbCircleDefault" GroupName="circleAlgorithm" Grid.Row="5">Default</RadioButton>
+                    <RadioButton Name="rbCircleMidPoint" GroupName="circleAlgorithm" Grid.Row="6" IsChecked="True">中点圆</RadioButton>
+                    <CheckBox Name="cbCircleAnimation" Margin="0 5 0 0" Grid.Row="7">Animation</CheckBox>
+                    <Button Name="btnDrawCircle" Click="BtnDrawCircle_Click" Grid.Column="1" Grid.Row="8">Draw circle</Button>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <ListBox x:Name="drawingItemsListBox" Grid.Column="1" Grid.Row="1">
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Delete" Click="MenuItem_Click"/>
+                </ContextMenu>
+            </ListBox.ContextMenu>
+        </ListBox>
+        <Slider Grid.Row="2" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>

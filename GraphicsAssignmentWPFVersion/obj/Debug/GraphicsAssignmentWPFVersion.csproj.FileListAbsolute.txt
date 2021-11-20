@@ -1,0 +1,17 @@
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\bin\Debug\GraphicsAssignmentWPFVersion.exe.config
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\bin\Debug\GraphicsAssignmentWPFVersion.exe
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\bin\Debug\GraphicsAssignmentWPFVersion.pdb
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\obj\Debug\GraphicsAssignmentWPFVersion.csprojAssemblyReference.cache
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\obj\Debug\MainWindow.g.cs
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\obj\Debug\App.g.cs
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\obj\Debug\GraphicsAssignmentWPFVersion_MarkupCompile.cache
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\obj\Debug\GraphicsAssignmentWPFVersion_MarkupCompile.lref
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\obj\Debug\MainWindow.baml
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\obj\Debug\GraphicsAssignmentWPFVersion.g.resources
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\obj\Debug\GraphicsAssignmentWPFVersion.Properties.Resources.resources
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\obj\Debug\GraphicsAssignmentWPFVersion.csproj.GenerateResource.cache
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\obj\Debug\GraphicsAssignmentWPFVersion.csproj.CoreCompileInputs.cache
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\obj\Debug\GraphicsAssignmentWPFVersion.exe
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\obj\Debug\GraphicsAssignmentWPFVersion.pdb
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignmentWPFVersion\obj\Debug\Resources\themes\Theme.baml

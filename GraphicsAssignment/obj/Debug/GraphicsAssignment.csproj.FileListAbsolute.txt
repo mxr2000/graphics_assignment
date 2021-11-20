@@ -1,0 +1,10 @@
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignment\bin\Debug\GraphicsAssignment.exe.config
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignment\bin\Debug\GraphicsAssignment.exe
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignment\bin\Debug\GraphicsAssignment.pdb
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignment\obj\Debug\GraphicsAssignment.csprojAssemblyReference.cache
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignment\obj\Debug\GraphicsAssignment.Form1.resources
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignment\obj\Debug\GraphicsAssignment.Properties.Resources.resources
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignment\obj\Debug\GraphicsAssignment.csproj.GenerateResource.cache
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignment\obj\Debug\GraphicsAssignment.csproj.CoreCompileInputs.cache
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignment\obj\Debug\GraphicsAssignment.exe
+D:\Programs\csharp\winform\GraphicsAssignment\GraphicsAssignment\obj\Debug\GraphicsAssignment.pdb
